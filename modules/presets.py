@@ -3,8 +3,10 @@ import gradio as gr
 
 # ChatGPT 设置
 initial_prompt = "You are a helpful assistant."
-API_URL = "https://api.openai.com/v1/chat/completions"
-BALANCE_API_URL="https://api.openai.com/dashboard/billing/credit_grants"
+API_URL = "https://openai.aisxkc.com/v1/chat/completions"
+# API_URL = "https://api.openai.com/v1/chat/completions"
+BALANCE_API_URL="https://openai.aisxkc.com/dashboard/billing/credit_grants"
+# BALANCE_API_URL="https://api.openai.com/dashboard/billing/credit_grants"
 HISTORY_DIR = "history"
 TEMPLATES_DIR = "templates"
 
@@ -23,13 +25,13 @@ timeout_streaming = 10  # 流式对话时的超时时间
 max_token_all = 3500  # 非流式对话时的最大 token 数
 timeout_all = 200  # 非流式对话时的超时时间
 enable_streaming_option = True  # 是否启用选择选择是否实时显示回答的勾选框
-HIDE_MY_KEY = False  # 如果你想在UI中隐藏你的 API 密钥，将此值设置为 True
+HIDE_MY_KEY = True  # 如果你想在UI中隐藏你的 API 密钥，将此值设置为 True
 CONCURRENT_COUNT = 100 # 允许同时使用的用户数量
 
 SIM_K = 5
 INDEX_QUERY_TEMPRATURE = 1.0
 
-title = """<h1 align="left" style="min-width:200px; margin-top:0;">川虎ChatGPT 🚀</h1>"""
+title = """<h1 align="left" style="min-width:200px; margin-top:0;">深信科创Bot 🚀</h1>"""
 description = """\
 <div align="center" style="margin:16px 0">
 

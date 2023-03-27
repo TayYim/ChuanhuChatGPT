@@ -395,7 +395,7 @@ logging.info(
     + colorama.Style.RESET_ALL
 )
 # 默认开启本地服务器，默认可以直接从IP访问，默认不创建公开分享链接
-demo.title = "川虎ChatGPT 🚀"
+demo.title = "深信科创Bot 🚀"
 
 if __name__ == "__main__":
     reload_javascript()
@@ -428,6 +428,6 @@ if __name__ == "__main__":
             demo.queue(concurrency_count=CONCURRENT_COUNT).launch(
                 share=False, favicon_path="./assets/favicon.ico", inbrowser=True
             )  # 改为 share=True 可以创建公开分享链接
-        # demo.queue(concurrency_count=CONCURRENT_COUNT).launch(server_name="0.0.0.0", server_port=7860, share=False) # 可自定义端口
+        demo.queue(concurrency_count=CONCURRENT_COUNT).launch(server_name="0.0.0.0", server_port=7860, share=False) # 可自定义端口
         # demo.queue(concurrency_count=CONCURRENT_COUNT).launch(server_name="0.0.0.0", server_port=7860,auth=("在这里填写用户名", "在这里填写密码")) # 可设置用户名与密码
         # demo.queue(concurrency_count=CONCURRENT_COUNT).launch(auth=("在这里填写用户名", "在这里填写密码")) # 适合Nginx反向代理
